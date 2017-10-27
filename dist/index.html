@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no"><meta name=keywords content=Roy,fishing><meta name=description content=fishing><title>vue-钓鱼网站</title><script>function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)){
+          window.location.href = "https://www.nidosport.com/index/index";
+        }
+      };
+
+      //特定页面和管理台查看不跳转
+      if (window.location.href.indexOf('/activity/register_shop') == -1
+        && window.location.href.indexOf('_manage=1') == -1) {
+        //browserRedirect();
+      }
+
+//      (function(baseFontSize, fontscale) {
+//        var _baseFontSize = baseFontSize || 100;
+//        var _fontscale = fontscale || 1;
+//        var win = window;
+//        var doc = win.document;
+//        var ua = navigator.userAgent;
+//        var matches = ua.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i);
+//        var UCversion = ua.match(/U3\/((\d+|\.){5,})/i);
+//        var isUCHd = UCversion && parseInt(UCversion[1].split('.').join(''), 10) >= 80;
+//        var isIos = navigator.appVersion.match(/(iphone|ipad|ipod)/gi);
+//        var dpr = win.devicePixelRatio || 1;
+//        if (!isIos && !(matches && matches[1] > 534) && !isUCHd) {
+//          // 如果非iOS, 非Android4.3以上, 非UC内核, 就不执行高清, dpr设为1;
+//          dpr = 1;
+//        }
+//        var scale = 1 / dpr;
+//
+//        var metaEl = doc.querySelector('meta[name="viewport"]');
+//        if (!metaEl) {
+//          metaEl = doc.createElement('meta');
+//          metaEl.setAttribute('name', 'viewport');
+//          doc.head.appendChild(metaEl);
+//        }
+//        metaEl.setAttribute('content', 'width=device-width,user-scalable=no,initial-scale=' + scale + ',maximum-scale=' + scale + ',minimum-scale=' + scale);
+//        doc.documentElement.style.fontSize = _baseFontSize / 2 * dpr * _fontscale + 'px';
+//      })();
+
+      if (!window.Promise) {
+        document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
+      }</script><link href=./static/css/app.060d8b1fb761e81ab9abfd82c59bd88c.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.95a1e81ccc45b5853915.js></script><script type=text/javascript src=./static/js/vendor.24ec3915c2167bb6e903.js></script><script type=text/javascript src=./static/js/app.9d88729e632b19048f84.js></script></body></html>
